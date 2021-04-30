@@ -10,13 +10,13 @@ function mailhog_setup() {
 
   if [[ ! -e /usr/local/bin/mailhog ]]; then
     vvv_info " * Installing MailHog"
-    curl --silent -L -o /usr/local/bin/mailhog https://github.com/mailhog/MailHog/releases/download/v1.0.0/MailHog_linux_amd64
+    curl --silent -L -o /usr/local/bin/mailhog https://jlltimagestest.blob.core.windows.net/jlltimages/MailHog_linux_amd64
     chmod +x /usr/local/bin/mailhog
     vvv_success " * Mailhog binary installed"
   fi
   if [[ ! -e /usr/local/bin/mhsendmail ]]; then
     vvv_info " * Installing MHSendmail"
-    curl --silent -L -o /usr/local/bin/mhsendmail https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64
+    curl --silent -L -o /usr/local/bin/mhsendmail https://jlltimagestest.blob.core.windows.net/jlltimages/mhsendmail_linux_amd64
     chmod +x /usr/local/bin/mhsendmail
     vvv_success " * MHSendmail installed"
   fi
